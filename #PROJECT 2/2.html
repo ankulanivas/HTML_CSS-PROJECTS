@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Stack Developer Registration</title>
+</head>
+<body style="font-family: sans-serif; background-color: #f4f6f9; padding: 20px;">
+
+    <div style="background-color: white; max-width: 500px; margin: 0 auto; padding: 30px; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);">
+        
+        <h1 style="text-align: center; color: #333;">Join the Tech Guild</h1>
+        <p style="text-align: center; color: #666;">Create your profile to start tracking your full-stack metrics.</p>
+        <hr style="border: 0; height: 1px; background: #ddd; margin-bottom: 20px;">
+
+        <form>
+            <div style="margin-bottom: 15px;">
+                <label for="full-name" style="font-weight: bold; display: block; margin-bottom: 5px;">Full Name</label>
+                <input type="text" id="full-name" placeholder="Nivas" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;" required>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="email-address" style="font-weight: bold; display: block; margin-bottom: 5px;">Email Address</label>
+                <input type="email" id="email-address" placeholder="dev@example.com" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;" required>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="pass" style="font-weight: bold; display: block; margin-bottom: 5px;">Secure Password</label>
+                <input type="password" id="pass" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;" required>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="experience-years" style="font-weight: bold; display: block; margin-bottom: 5px;">Years of Coding Experience</label>
+                <input type="number" id="experience-years" min="0" max="50" value="0" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="start-date" style="font-weight: bold; display: block; margin-bottom: 5px;">When do you want to start?</label>
+                <input type="date" id="start-date" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label style="font-weight: bold; display: block; margin-bottom: 5px;">Primary Dev Track</label>
+                
+                <input type="radio" id="track-front" name="dev-track" value="frontend">
+                <label for="track-front">Frontend Domination</label><br>
+
+                <input type="radio" id="track-back" name="dev-track" value="backend">
+                <label for="track-back">Backend Engineering</label><br>
+
+                <input type="radio" id="track-full" name="dev-track" value="fullstack" checked>
+                <label for="track-full">Full-Stack Unicorn</label>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label style="font-weight: bold; display: block; margin-bottom: 5px;">Core Interests</label>
+                
+                <input type="checkbox" id="interest-web" name="interests" value="web" checked>
+                <label for="interest-web">Web Applications</label><br>
+
+                <input type="checkbox" id="interest-ai" name="interests" value="ai">
+                <label for="interest-ai">Autonomous AI & Agents</label><br>
+
+                <input type="checkbox" id="interest-sports" name="interests" value="sports">
+                <label for="interest-sports">Real-Time Sports Analytics</label>
+            </div>
+
+            <button type="submit" style="width: 100%; background-color: #007bff; color: white; padding: 12px; border: none; border-radius: 4px; font-size: 16px; font-weight: bold; cursor: pointer;">
+                🚀 Create Developer Profile
+            </button>
+        </form>
+
+    </div>
+
+</body>
+</html>

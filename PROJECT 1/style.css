@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('FONTS/AVENGEANCE HEROIC AVENGER.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+    background: linear-gradient(#363636,#e2a857,#870000,#c3c1c1);   
+}
+.container{
+    width: 800px;
+    margin: 20px auto;
+    background-color: whitesmoke;
+    background: url(images/intro.jpg);
+    border-radius:7px ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 20px 50px black; 
+}
+nav{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    color:  rgb(237, 29, 36);
+    font-family: 'MyCustomFont', serif;
+    font-weight: 400;
+    font-style: normal;
+    /* background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("intro.jpg");
+
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 10px; */
+
+}
+
+nav h1{
+    font-size: 5rem;
+    margin-top:20px ;
+
+}
+nav p{
+    font-size: 1.2rem;
+    margin: 14px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+.profiles{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    /* max-width: 900px; */
+}
+.avenger {
+    border: 2px solid rgb(199, 199, 199);
+    margin: 10px ;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 7px;
+    /* animation: opening 1s ease-in 0s 1 normal forwards; */
+}
+.card_container{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(233, 224, 224);
+    border-radius: 8px;
+    
+}
+.card_image_container{
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    height: 10rem;
+}
+.card_image{
+    object-fit: cover;
+    object-position:top;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+     animation: opening 1s ease-in 0s 1 normal forwards;
+}
+a{
+    text-decoration: none;
+}
+.card_title{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 10px;
+    max-height: 150px;
+}
+.signature{
+    font-weight:bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.desc{
+    text-indent: 50px;
+}
+.publisher_content{
+
+display:flex;
+
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 140px ;
+    animation: opening 1s ease-in 0s 1 normal forwards;
+}
+.logo{
+    padding: 7px 0px 0px 0px;
+
+}
+.info{
+    padding: 13px 10px 10px 6px;
+    font-size: 1rem;
+}
+.tag{
+    border: 2px solid rgb(116, 113, 113);
+    border-radius: 5px;
+    text-align: center;
+    color: grey;
+    font-size: 0.79rem;
+    line-height: 1rem;
+    padding: 2px;
+    width: 60px;
+    height: 27px;
+    margin: 24px 0px 0px 100px;
+}
+#ironman{
+background: linear-gradient(
+    180deg,
+    #cc1d26 18%,   /* Vibrant Iron Man Red */
+    #e2a857 32%,   /* Bright Metallic Gold (Forehead) */
+    #9e6c27 48%,   /* Shadowed Gold / Bronze */
+    #9e6c27 52%,   /* Shadowed Gold */
+    #d49b43 75%,   /* Metallic Gold (Faceplate Base) */
+    #9e0b0f 120%   /* Deep Crimson Red (Bottom) */
+);
+}
+#captain{
+background: radial-gradient(
+    circle,
+    #0047ba 0%,    /* Shield Blue */
+    #d8dadf 40%,   /* Metallic Silver */
+    #b8001c 100%   /* Shield Red */
+);
+}
+#thor{
+    background-image: url('images/thunder.jpg');
+    /* background: linear-gradient(
+    135deg,
+    #ffffff 0%,    
+    #00f0ff 30%,   
+    #0088ff 55%,   
+    #ff1744 85%,   
+    #d50000 100%   
+    ); */
+}
+#hulk{
+background: linear-gradient(
+    to right,
+    #445c3a 0%,
+    #6c9248 75%,
+    #99be62 100%
+);
+}
+#spiderman{
+    background-image: url('images/web.jpg');
+}
+#strange{
+    background-image: url(images/strangedimention.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#hawkeye{
+background: linear-gradient(
+    to right,
+    #324ba7 0%,    /* Slate Charcoal */
+    #5966a3 50%,   /* Slate Blue */
+    #795295 75%,   /* Medium Purple */
+    #a361b1 100%   /* Bright Violet/Magenta */
+);
+}
+#widow{
+background: linear-gradient(
+    to right,
+    #d2c3c3 0%,
+    #9e080f 30%,
+    #f8494f 50%,
+    #9e080f 70%,
+    #7b4d4d 100%
+);
+}
+@media (max-width:700px) {
+    .profiles{
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+}
+.avenger{
+    width: 100vw;
+}
+.tag{
+    margin-left:auto ;
+}
+}
+.card_image:hover{
+    transform: scale(1.3);
+    /* transform:translateY(5px) ; */
+}
+.avenger:hover{
+    box-shadow: 10px 10px 20px black;
+}
+@keyframes opening {
+    from{
+       opacity: 0;
+    }
+    to{
+       opacity: 1;
+    }
+}
