@@ -69,7 +69,7 @@ nav p{
     flex-direction: column;
     gap: 10px;
     border-radius: 7px;
-    /* animation: opening 1s ease-in 0s 1 normal forwards; */
+    animation: opening 1s ease-in 0s 1 normal forwards;
 }
 .card_container{
     overflow: hidden;

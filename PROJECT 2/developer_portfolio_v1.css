@@ -1,0 +1,93 @@
+body{
+    background: linear-gradient(135deg, #02122F 0%, #23354D 50%, #495B7D 100%);
+  color: #F0ECDD;
+   /* background-color: #88cdf6; */
+}
+main{
+    background-color: whitesmoke;
+    color:hsl(0, 18%, 13%);
+    border: 3px ;
+    border-radius: 10px;   
+    width: 50vw;           /* 1. Define a specific width */
+    margin: 20px auto;         /* 2. Set top/bottom to 0, left/right to auto */   
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 0px lightblue;   
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 0.2rem;
+    padding-left: 2rem;
+    padding-right:2rem;
+    padding-bottom: 1rem;
+    /* background: linear-gradient(135deg, #015C92 0%, #2D82B5 50%, #8BCDF6 100%);
+  color: #FFFFFF; */
+    
+}
+header{
+    background-color: #2563eb;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border:3px ;
+    border-radius: 10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+   
+}
+header p{
+   font-size: 1.2rem;
+   color: hsl(225, 21%, 89%);
+}
+hr{
+    padding-left: 2rem;
+    padding-right:2rem;
+}
+#aboutme p{
+    color: hsl(226, 47%, 46%);
+    text-indent: 25px;
+}
+#contact p{
+    padding-left:150px;
+    text-align: justify;
+   
+}
+
+#aboutme,#myskills,#projects,#contact{
+    text-align: center;
+    border: 3px ;
+    border-radius: 10px;
+    padding: 20px;
+}
+::selection{
+    background-color: yellow;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+
+    color: yellowgreen;
+}
+ul li{
+    color: hsl(226, 47%, 46%);
+    list-style-type: square;
+    list-style-position: inside;
+    display: inline-block;
+    /* list-style-image: url("images/coding.png"); */
+    
+}
+ol li{
+    color: hsl(226, 47%, 46%);
+    display: inline-block;
+    list-style-position: inside;
+    margin: 5px;
+    /* list-style-image: url("images/coding.png"); */
+    
+}
+
+footer p{
+    text-align: center;
+    margin:20px auto;
+}
+section:hover{
+    box-shadow: 0 5px 15px rgba(19, 1, 1, 0.15);
+}
+
